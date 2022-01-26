@@ -1,1 +1,4 @@
-node_modules, package-lock/
+node_modules, 
+package-lock/
+.vscode/
+sqltools_20220125115403_4908.log/
