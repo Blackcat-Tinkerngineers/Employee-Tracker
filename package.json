@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "nodemon":  "nodemon employee-tracker.js localhost 3001"
   },
   "repository": {
     "type": "git",
