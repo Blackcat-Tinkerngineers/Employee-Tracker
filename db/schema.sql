@@ -1,4 +1,3 @@
-
 INSERT INTO employee (id,first_name, last_name, role_id, manager_id)
 VALUES 
 ('101','Cassie', 'Cooper', '100', '100'),
@@ -29,3 +28,6 @@ VALUES
 ('400','Social Media Coordinator','170000','404'),
 ('402','Social Media Host','120000','404'),
 ('500','Sales Manager','170000','505');
+
+SELECT id, name
+FROM department;

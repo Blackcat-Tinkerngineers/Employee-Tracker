@@ -25,25 +25,13 @@
 
 ## Built With
 
-<a href="https://www.npmjs.com/package/table-printer-cli">https://www.npmjs.com/package/table-printer-cli</a>
-<br>
-</br>
-<a href="https://www.npmjs.com/package/console-table-printer">https://www.npmjs.com/package/console-table-printer</a>
-<br>
-</br>
-<a href="https://insomnia.rest/">https://insomnia.rest/</a>
+<a href="https://www.mysql.com/">https://www.mysql.com/</a>
 <br>
 </br>
 <a href="https://www.npmjs.com/package/console.table">https://www.npmjs.com/package/console.table</a>
 <br>
 </br>
 <a href="https://www.npmjs.com/package/inquirer">https://www.npmjs.com/package/inquirer</a>
-<br>
-</br>
-<a href="https://www.npmjs.com/package/postgres">https://www.npmjs.com/package/postgres</a>
-<br>
-</br>
-<a href="https://github.com/cweijan/vscode-database-client">https://github.com/cweijan/vscode-database-client</a>
 <br>
 </br>
 <a href="https://www.npmjs.com/package/mysql2">https://www.npmjs.com/package/mysql2</a>
@@ -61,14 +49,7 @@
 
 ## Installation
 
-
-<a href="https://www.npmjs.com/package/table-printer-cli">https://www.npmjs.com/package/table-printer-cli</a>
-<br>
-</br>
-<a href="https://www.npmjs.com/package/console-table-printer">https://www.npmjs.com/package/console-table-printer</a>
-<br>
-</br>
-<a href="https://insomnia.rest/">https://insomnia.rest/</a>
+<a href="https://www.mysql.com/">https://www.mysql.com/</a>
 <br>
 </br>
 <a href="https://www.npmjs.com/package/console.table">https://www.npmjs.com/package/console.table</a>
@@ -77,17 +58,12 @@
 <a href="https://www.npmjs.com/package/inquirer">https://www.npmjs.com/package/inquirer</a>
 <br>
 </br>
-<a href="https://www.npmjs.com/package/postgres">https://www.npmjs.com/package/postgres</a>
-<br>
-</br>
-<a href="https://github.com/cweijan/vscode-database-client">https://github.com/cweijan/vscode-database-client</a>
-<br>
-</br>
 <a href="https://www.npmjs.com/package/mysql2">https://www.npmjs.com/package/mysql2</a>
 <br>
 </br>
 <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>
-
+<br>
+</br>
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>

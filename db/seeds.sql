@@ -2,7 +2,7 @@ CREATE DATABASE blackcat_db;
 USE blackcat_db;
 
 CREATE TABLE department (
-    id INIT PRIMARY KEY,
+    id INT PRIMARY KEY,
     name VARCHAR(30)
 );
 
