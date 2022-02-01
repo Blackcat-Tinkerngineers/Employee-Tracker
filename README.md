@@ -13,9 +13,8 @@
 
 
   ## About the Project
-  <p></p>
+  <p>Welcome to the Black Cat Inventory Management System! Once you start the application, you will be presented with the following options: view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role. Additionally, be sure to check out our detailed directory table. </p>
   
-
 
   
 <div align="center"></div>
@@ -110,7 +109,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 👩🏻‍💻<a href="https://www.linkedin.com/in/chelsiebgonsalves/">https://www.linkedin.com/in/chelsiebgonsalves/</a>
 <br>
 </br>
-🧁<a href="https://github.com/Blackcat-Tinkerngineers/Employee-Tracker">https://github.com/Blackcat-Tinkerngineers/Employee-Tracker</a>
+🧁<a href="https://github.com/Blackcat-Tinkerngineers/blackcat-company-directory">https://github.com/Blackcat-Tinkerngineers/blackcat-company-directory</a>
 <br>
 </br>
 <p align="right">(<a href="#top">back to top</a>)</p>
