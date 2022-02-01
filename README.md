@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-# Title: Blackcat ompany directory
+# Title: Blackcat company directory
 
 
 ## Table of Contents
