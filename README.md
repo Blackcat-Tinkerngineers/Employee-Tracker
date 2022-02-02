@@ -1,5 +1,6 @@
 <div id="top"></div>
 
+
 # Title: Blackcat company directory
 
 
@@ -14,6 +15,9 @@
 
   ## About the Project
   <p>Welcome to the Black Cat Inventory Management System! Once you start the application, you will be presented with the following options: view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role. Additionally, be sure to check out our detailed directory table. </p>
+  
+  ![image](https://user-images.githubusercontent.com/88634637/152150725-c5c20e8c-7cfd-42ed-becc-58771e68e604.png)
+
   
 
   
