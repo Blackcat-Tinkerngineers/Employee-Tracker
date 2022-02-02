@@ -2,28 +2,28 @@
   "name": "employee-tracker",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "employee.js",
   "scripts": {
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node employee.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Blackcat-Tinkerngineers/Employee-Tracker.git"
+    "url": "git+github.com/Blackcat-Tinkerngineers/blackcat-company-directory"
   },
   "author": "Chelsie L. Bangloy-Gonsalves",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Blackcat-Tinkerngineers/Employee-Tracker/issues"
+    "url": "https://github.com/Blackcat-Tinkerngineers/blackcat-company-directory/issues"
   },
-  "homepage": "https://github.com/Blackcat-Tinkerngineers/Employee-Tracker#readme",
+  "homepage": "https://github.com/Blackcat-Tinkerngineers/blackcat-company-directory#readme",
   "dependencies": {
     "express": "^4.17.2",
     "inquirer": "^8.2.0",
-    "jest": "^27.4.7",
-    "mysql2": "^2.3.3"
+    "mysql": "^2.18.1"
   },
   "devDependencies": {
-    "console-table-printer": "^2.10.0",
-    "console.table": "^0.10.0"
+    "console.table": "^0.10.0",
+    "mysql2": "^2.3.3"
   }
 }

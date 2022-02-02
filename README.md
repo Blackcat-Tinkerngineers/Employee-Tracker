@@ -112,4 +112,8 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 🧁<a href="https://github.com/Blackcat-Tinkerngineers/blackcat-company-directory">https://github.com/Blackcat-Tinkerngineers/blackcat-company-directory</a>
 <br>
 </br>
+<<<<<<< HEAD
 <p align="right">(<a href="#top">back to top</a>)</p>
+=======
+<p align="right">(<a href="#top">back to top</a>)</p>
+>>>>>>> 57197ee (prep before video setup)
