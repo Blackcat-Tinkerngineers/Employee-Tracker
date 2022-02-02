@@ -2,12 +2,12 @@ CREATE DATABASE blackcat_db;
 USE blackcat_db;
 
 CREATE TABLE department (
-    id INT PRIMARY KEY,
+    id INT,
     name VARCHAR(30)
 );
 
 CREATE TABLE role(
-    id INT PRIMARY KEY,
+    id INT,
     title VARCHAR(30),
     salary DECIMAL,
     department_id INT
@@ -21,3 +21,4 @@ CREATE TABLE employee(
 	manager_id INT NULL
 );
 
+DROP TABLE department;

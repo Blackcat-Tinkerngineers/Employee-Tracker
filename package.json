@@ -2,10 +2,10 @@
   "name": "employee-tracker",
   "version": "1.0.0",
   "description": "",
-  "main": "employee.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node employee.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -19,8 +19,7 @@
   "homepage": "https://github.com/Blackcat-Tinkerngineers/blackcat-company-directory#readme",
   "dependencies": {
     "express": "^4.17.2",
-    "inquirer": "^8.2.0",
-    "mysql": "^2.18.1"
+    "inquirer": "^8.2.0"
   },
   "devDependencies": {
     "console.table": "^0.10.0",
