@@ -1,7 +1,7 @@
 <div id="top"></div>
 
 
-# Title: Blackcat company directory
+# Title: Blackcat Company Directory (CLI addition)
 
 
 ## Table of Contents
