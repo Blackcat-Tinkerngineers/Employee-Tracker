@@ -1,4 +1,4 @@
-INSERT INTO employee (id,first_name, last_name, role_id, manager_id)
+INSERT INTO employee (id, first_name, last_name, employee_id, manager_id)
 VALUES 
 ('101','Cassie', 'Cooper', '100', '100'),
 ('101','Paxton', 'Lee', '103', '100'),
@@ -10,7 +10,7 @@ VALUES
 ('505','Jenny', 'Aruokay', '500', '500');
 
 
-INSERT INTO department(id, name)
+INSERT INTO department(id,name)
 VALUES 
 ('101','Engineering'),
 ('202','Administrations'),

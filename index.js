@@ -1,16 +1,11 @@
+const dotenv = require('dotenv').config()
 const inquirer = require("inquirer");
 const mysql = require("mysql2");
-const cTable = require('console.table');
+const cTable = require("console.table");
 const connection = mysql.createConnection({
   host: "127.0.0.1",
-
-  // Your port; if not 3306
   port: 3306,
-
-  // Your username
   user: "root",
-
-  // Your password
   password: "@!Pw*L#cc66DCpMgE6er@Nsp",
   database: "blackcat_db"
 });
@@ -20,20 +15,20 @@ console.table([
   { Employee_ID: '100',
     FirstName: 'Cassie',
     LastName: 'Cooper',
+    Role_ID: '100',
+    Role: 'Lead Engineer',
     Department_ID: '101',
     Department_Name: 'Engineering',
-    Role: 'Lead Engineer',
-    Role_ID: '100',
     Salary: '$160,000',
     Manager_ID: 'Null',
   },
   { Employee_ID: '103',
     FirstName: 'Paxton',
     LastName: 'Lee',
+    Role_ID: '103',
+    Role: 'Engineer',
     Department_ID: '101',
     Department_Name: 'Engineering',
-    Role: 'Engineer',
-    Role_ID: '103',
     Salary: '$140,000',
     Manager_ID: '100 (Cassie Cooper)',
   },
@@ -41,8 +36,8 @@ console.table([
     Employee_ID: '204',
     FirstName: 'Stephen',
     LastName: 'Roe',
-    Role: 'Front Desk Greeter',
     Role_ID: '204',
+    Role: 'Front Desk Greeter',
     Department_ID: '202',
     Department_Name: 'Administration',
     Salary: '$100,000',
@@ -52,8 +47,8 @@ console.table([
   Employee_ID: '200',
   FirstName: 'Daniel',
   LastName: 'Fargus',
-  Role: 'Front Desk Manager',
   Role_ID: '200',
+  Role: 'Front Desk Manager',
   Department_ID: '202',
   Department_Name: 'Administration',
   Salary: '$160,000',
@@ -63,8 +58,8 @@ console.table([
   Employee_ID: '300',
   FirstName: 'Cherry',
   LastName: 'von Howztubskin',
-  Role: 'HR Manager',
   Role_ID: '300',
+  Role: 'HR Manager',  
   Department_ID: '303',
   Department_Name: 'Human Resources',
   Salary: '$160,000',
@@ -74,8 +69,8 @@ console.table([
   Employee_ID: '400',
   FirstName: 'Jackie',
   LastName: 'Dayton',
-  Role: 'Social Media Coordinator',
   Role_ID: '400',
+  Role: 'Social Media Coordinator',
   Department_ID: '404',
   Department_Name: 'Social Media Team',
   Salary: '$170,000',
@@ -85,8 +80,8 @@ console.table([
   Employee_ID: '402',
   FirstName: 'Nandilia',
   LastName: 'Billings',
-  Role: 'Social Media Host',
   Role_ID: '402',
+  Role: 'Social Media Host',
   Department_ID: '404',
   Department_Name: 'Social Media Team',
   Salary: '$120,000',
@@ -96,8 +91,8 @@ console.table([
   Employee_ID: '500',
   FirstName: 'Jenny',
   LastName: 'Aruokay',
-  Role: 'Sales Manager',
   Role_ID: '500',
+  Role: 'Sales Manager',
   Department_ID: '505',
   Department_Name: 'Sales',
   Salary: '$170,000', 
@@ -118,7 +113,7 @@ inquirer
       inquirer
         .prompt({
           type: "list",
-          message: "What do you want to add?",
+          message: "What would you like to add?",
           name: "option",
           choices: ["department", "role", "employee"]
         })
@@ -131,7 +126,7 @@ inquirer
                 .prompt({
                   type: "input",
                   message: "What is the name of the department you want to add?",
-                  name: "option"
+                  name: "name"
                 })
                 .then(function(answer) {
                   console.log(answer);
@@ -139,7 +134,7 @@ inquirer
     
                   connection.query(
                     "INSERT INTO department SET ?",
-                    { name: answer.option },
+                    { name: answer.name },
                     function(error, results) {
                       if (error) throw error;
                       console.log(results);
@@ -153,15 +148,16 @@ inquirer
             inquirer
               .prompt([{
                 type: "input",
-                message: "What is the title of the role you want to add?",
-                name: "option"
-              },{
+                message: "Please is the name of the role you want to add?",
+                name: "title"
+              },
+              { 
                   type: "input",
                   message: "What is the salary for this position?",
                   name: "salary"
               },{
                 type: "input",
-                message: "What department does this role work in?",
+                message: "Please enter the department ID for this role.",
                 name: "department_id"
               }])
               .then(function(answer) {
@@ -170,7 +166,7 @@ inquirer
 
                 connection.query(
                   "INSERT INTO role SET ?",
-                  { title: answer.option, salary: answer.salary, department_id: answer.department_Id },
+                  { title: answer.tile, salary: answer.salary, department_id: answer.department_id },
                   function(error, results) {
                     if (error) throw error;
                     console.log(results);
@@ -196,12 +192,12 @@ inquirer
               },
                   {
                 type: "input",
-                message: "What will is the role ID of this employee?",
-                name: "role_id"
+                message: "Please enter an  ID number for this new employee.",
+                name: "employee_id"
               },
                   {
                 type: "input",
-                message: "What is the manager's role ID of this employee?",
+                message: "What is the manager's ID number of this employee?",
                 name: "manager_id"
               }
             ])
@@ -211,7 +207,7 @@ inquirer
 
                 connection.query(
                   "INSERT INTO employee SET ?",
-                  { first_name: answer.first_name, last_name: answer.last_name, role_id: answer.role_id, manager_id: answer.manager_id },
+                  { first_name: answer.first_name, last_name: answer.last_name, employee_id: answer.employee_id, manager_id: answer.manager_id },
                   function(error, results) {
                     if (error) throw error;
                     console.log(results);
@@ -283,7 +279,7 @@ inquirer
               .prompt({
                 type: "input",
                 message: "What is the name of the department you want to remove?",
-                name: "option"
+                name: "name"
               })
               .then(function(answer) {
                 console.log(answer);
@@ -291,7 +287,7 @@ inquirer
 
                 connection.query(
                   "DELETE FROM department WHERE ?",
-                  { name: answer.option },
+                  { name: answer.name },
                   function(error, results) {
                     if (error) throw error;
                     console.log(results);
@@ -305,8 +301,8 @@ inquirer
               .prompt({
                 type: "input",
                 message:
-                  "What is the title of the role you want to remove?",
-                name: "option"
+                  "What is the name of the role title you would like to remove?",
+                name: "title"
               })
               .then(function(answer) {
                 console.log(answer);
@@ -314,7 +310,7 @@ inquirer
 
                 connection.query(
                   "DELETE FROM role WHERE ?",
-                  { title: answer.option },
+                  { title: answer.title },
                   function(error, results) {
                     if (error) throw error;
                     console.log(results);
@@ -328,7 +324,7 @@ inquirer
               .prompt({
                 type: "input",
                 message:"What is the employee ID number you would like to remove?",
-                name: "option"
+                name: "employee_id"
               })
               .then(function(answer) {
                 console.log(answer);
@@ -336,7 +332,7 @@ inquirer
 
                 connection.query(
                   "DELETE FROM employee WHERE ?",
-                  { id: answer.option },
+                  { employee_id: answer.employee_id },
                   function(error, results) {
                     if (error) throw error;
                     console.log(results);
