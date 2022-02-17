@@ -6,7 +6,7 @@ const connection = mysql.createConnection({
   host: "127.0.0.1",
   port: 3306,
   user: "root",
-  password: "@!Pw*L#cc66DCpMgE6er@Nsp",
+  password: "YouareaweakPOTATO1",
   database: "blackcat_db"
 });
  // beginning of terminal app start
@@ -207,7 +207,7 @@ inquirer
 
                 connection.query(
                   "INSERT INTO employee SET ?",
-                  { first_name: answer.first_name, last_name: answer.last_name, employee_id: answer.employee_id, manager_id: answer.manager_id },
+                  { id: answer.employee_id, first_name: answer.first_name, last_name: answer.last_name, employee_id: answer.employee_id, manager_id: answer.manager_id },
                   function(error, results) {
                     if (error) throw error;
                     console.log(results);
