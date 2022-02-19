@@ -1,7 +1,7 @@
 <div id="top"></div>
 
 
-# Title: Blackcat Company Directory (CLI addition)
+# Title: Blackcat Company Directory (CLI Edition)
 
 
 ## Table of Contents
@@ -23,15 +23,8 @@
   ## Live Demo QR Code 
   
   
-![image](https://user-images.githubusercontent.com/88634637/154424273-53ce6db8-362a-4e7c-b2b3-325db25222e3.png)
-  <br>
-  </br>
 
-  
-  <p> Part 2 </p>
-  
-![image](https://user-images.githubusercontent.com/88634637/154424613-aab9823b-9c5c-4ca3-ab49-278d5a0b125f.png)
-
+![image](https://user-images.githubusercontent.com/88634637/154782047-3c9c8b45-0e6e-4b13-9286-dc0e6f3ccb6b.png)
 
 
   
