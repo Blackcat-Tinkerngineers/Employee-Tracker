@@ -9,7 +9,7 @@ const connection = mysql.createConnection({
   password: "YouareaweakPOTATO1",
   database: "blackcat_db"
 });
- // beginning of terminal app start
+
 
 console.table([
   { Employee_ID: '100',
@@ -148,16 +148,16 @@ inquirer
             inquirer
               .prompt([{
                 type: "input",
-                message: "Please is the name of the role you want to add?",
+                message: "What is the name of the role you want to add?",
                 name: "title"
               },
               { 
                   type: "input",
-                  message: "What is the salary for this position?",
+                  message: "What is the salary for this role?",
                   name: "salary"
               },{
                 type: "input",
-                message: "Please enter the department ID for this role.",
+                message: "Please enter the department ID # for this role",
                 name: "department_id"
               }])
               .then(function(answer) {
@@ -166,7 +166,7 @@ inquirer
 
                 connection.query(
                   "INSERT INTO role SET ?",
-                  { title: answer.tile, salary: answer.salary, department_id: answer.department_id },
+                  { title: answer.title, salary: answer.salary, department_id: answer.department_id },
                   function(error, results) {
                     if (error) throw error;
                     console.log(results);
@@ -192,12 +192,12 @@ inquirer
               },
                   {
                 type: "input",
-                message: "Please enter an  ID number for this new employee.",
+                message: "Please enter an  ID # for this new employee.",
                 name: "employee_id"
               },
                   {
                 type: "input",
-                message: "What is the manager's ID number of this employee?",
+                message: "What is the manager's ID # of this employee?",
                 name: "manager_id"
               }
             ])

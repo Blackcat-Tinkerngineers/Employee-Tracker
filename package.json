@@ -1,7 +1,7 @@
 {
   "name": "employee-tracker",
   "version": "1.0.0",
-  "description": "<div id=\"top\"></div>",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,22 +9,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+github.com/Blackcat-Tinkerngineers/blackcat-company-directory"
+    "url": "git+https://github.com/Blackcat-Tinkerngineers/blackcat-company-directory.git"
   },
-  "author": "Chelsie L. Bangloy-Gonsalves",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Blackcat-Tinkerngineers/blackcat-company-directory/issues"
   },
   "homepage": "https://github.com/Blackcat-Tinkerngineers/blackcat-company-directory#readme",
   "dependencies": {
-    "dotenv": "^16.0.0",
-    "express": "^4.17.2",
-    "inquirer": "^8.2.0"
-  },
-  "devDependencies": {
     "console.table": "^0.10.0",
+    "dotenv": "^16.0.0",
+    "inquirer": "^8.2.0",
     "mysql2": "^2.3.3"
-  },
-  "keywords": []
+  }
 }

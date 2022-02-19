@@ -52,3 +52,5 @@ VALUES
 ('402','Social Media Host','120000','404'),
 ('500','Sales Manager','170000','505');
 
+
+SELECT * FROM role;
